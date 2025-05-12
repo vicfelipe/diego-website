@@ -1,0 +1,24 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@font-face {
+    font-family: 'BentonSans-Black';
+    src: url('/fonts/BentonSans-Black.otf') format('truetype');
+}
+@font-face {
+    font-family: 'BentonSans-Bold';
+    src: url('/fonts/BentonSans-Bold.otf') format('truetype');
+}
+@font-face {
+    font-family: 'BentonSans Book';
+    src: url('/fonts/BentonSans-Book.otf') format('truetype');
+}
+@font-face {
+    font-family: 'BentonSans-Medium';
+    src: url('/fonts/BentonSans-Medium.otf') format('truetype');
+}
+@font-face {
+    font-family: 'BentonSans-Regular';
+    src: url('/fonts/BentonSans-Regular.otf') format('truetype');
+}

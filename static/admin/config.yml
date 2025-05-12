@@ -1,0 +1,84 @@
+backend:
+  name: git-gateway
+  branch: master
+
+media_folder: static/img
+public_folder: /img
+
+collections:
+  - label: "Trabalhos"
+    name: "blog"
+    folder: "site/content/blog"
+    create: true
+    format: "json"
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    editor:
+      preview: true
+    fields:
+      - { label: "Titulo", name: "title", widget: "string" }
+      - {
+          label: "Imagem de Capa (Recomendado: 475x475)",
+          name: "imgcapa",
+          widget: "image",
+        }
+      - {
+          label: "Imagem Destaque (Limite: 1920x1280)",
+          name: "imgdestaque",
+          widget: "image",
+        }
+      - { label: "Data de Publicação", name: "date", widget: "datetime" }
+      - { label: "Descrição", name: "description", widget: "string" }
+      - { label: "Corpo", name: "body", widget: "markdown" }
+  - label: "Páginas"
+    name: "pages"
+    files:
+      - label: "Sobre"
+        name: "about"
+        file: "site/content/pages/sobre.yml"
+        fields:
+          - { label: Title, name: title, widget: string }
+          - { label: Intro, name: intro, widget: markdown }
+          - label: Team
+            name: team
+            widget: list
+            fields:
+              - { label: Name, name: name, widget: string }
+              - { label: Position, name: position, widget: string }
+              - { label: Photo, name: photo, widget: image }
+      - label: "Etapas do Projeto"
+        name: "requirement"
+        file: "site/content/pages/etapas.yml"
+        fields:
+          - { label: Title, name: title, widget: string }
+          - { label: Intro, name: intro, widget: markdown }
+          - label: Team
+            name: team
+            widget: list
+            fields:
+              - { label: Name, name: name, widget: string }
+              - { label: Position, name: position, widget: string }
+              - { label: Photo, name: photo, widget: image }
+      - label: "Orçamento"
+        name: "orcamento"
+        file: "site/content/pages/orcamento.yml"
+        fields:
+          - { label: Title, name: title, widget: string }
+          - { label: Intro, name: intro, widget: markdown }
+          - label: Locations
+            name: locations
+            widget: list
+            fields:
+              - { label: Name, name: name, widget: string }
+              - { label: Address, name: address, widget: string }
+      - label: "Contato"
+        name: "contato"
+        file: "site/content/pages/contato.yml"
+        fields:
+          - { label: Title, name: title, widget: string }
+          - { label: Intro, name: intro, widget: markdown }
+          - label: Locations
+            name: locations
+            widget: list
+            fields:
+              - { label: Name, name: name, widget: string }
+              - { label: Address, name: address, widget: string }
