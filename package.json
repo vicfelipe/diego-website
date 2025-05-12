@@ -2,7 +2,7 @@
   "name": "diego-blog",
   "version": "1.0.0",
   "description": "Site Pessoal Diego Correa Design",
-  "author": "Victor Alencastro (https://www.victoralencastro.com.br)",
+  "author": "Victor Alencastro (www.victorcode.dev)",
   "private": true,
   "scripts": {
     "dev": "nuxt",

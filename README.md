@@ -50,7 +50,7 @@ O site é configurado para ser hospedado no Netlify. O arquivo `netlify.toml` co
 
 ## Autor
 
-O site foi desenvolvido por [Victor Alencastro](https://www.victoralencastro.com.br) para Diego Corrêa.
+O site foi desenvolvido por [Victor Alencastro](https://www.victorcode.dev) para Diego Corrêa.
 
 ## Licença
 
